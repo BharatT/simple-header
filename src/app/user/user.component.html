@@ -1,0 +1,20 @@
+<p>
+  user works!
+</p>
+<button routerLink="/addUser"> Add User </button>
+<br>
+<a [routerLink]="['/user/',1]" > User Details </a>
+
+
+<table width="900" border="1" align="center">
+<tr *ngFor="let data of users">
+<td> {{data.id}}</td>
+<td> {{data.name}}</td>
+<td> {{data.username}}</td>
+<td> {{data.email}}</td>
+</tr>
+</table>
+
+<!-- <p>
+  {{testuser | async | json}}
+</p> -->
